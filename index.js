@@ -6,14 +6,7 @@ psList()
   .then(results => {
     const yarnProcess = results.filter(p => p.name === 'yarn').shift()
     if (!yarnProcess) {
-      console.log(`
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-       Psst, use \`yarn\` instead
-
-~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~
-
-`.red)
+      throw "literally stop."
     }
   })
   .catch(err => console.log('error:', err))
