@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "./index.js"
+    "install": "./index.js"
   },
   "keywords": [],
   "author": "Alexander Wallin <office@alexanderwallin.com> (http://alexanderwallin.com)",
