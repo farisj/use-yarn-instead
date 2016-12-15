@@ -6,7 +6,7 @@ psList()
   .then(results => {
     const yarnProcess = results.filter(p => p.name === 'yarn').shift()
     if (!yarnProcess) {
-      throw "literally stop."
+      require("this-doesnt-exist");
     }
   })
   .catch(err => console.log('error:', err))
